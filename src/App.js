@@ -2,7 +2,7 @@ import React, { useState } from "react";
 import Header from "./components/Header";
 import Nav from "./components/Nav";
 // import Page from "./components/Page";
-// import Footer from "./components/Footer";
+import Footer from "./components/Footer";
 
 export default function App() {
   const [pages] = useState([
@@ -31,6 +31,7 @@ export default function App() {
         <Page currentPage={currentPage}></Page>
       </main>
       <Footer /> */}
+      <Footer />
     </div>
   );
 }
