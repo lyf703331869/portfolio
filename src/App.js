@@ -7,12 +7,12 @@ import Nav from "./components/Nav";
 export default function App() {
   const [pages] = useState([
     {
-      name: "About",
+      name: "about",
     },
-    { name: "Portfolio" },
-    { name: "Contact" },
+    { name: "portfolio" },
+    { name: "contact" },
     {
-      name: "Resume",
+      name: "resume",
     },
   ]);
 
@@ -20,14 +20,14 @@ export default function App() {
 
   return (
     <div>
-      {/* <Header>
+      <Header>
         <Nav
           pages={pages}
           setCurrentPage={setCurrentPage}
           currentPage={currentPage}
         ></Nav>
       </Header>
-      <main>
+      {/* <main>
         <Page currentPage={currentPage}></Page>
       </main>
       <Footer /> */}
