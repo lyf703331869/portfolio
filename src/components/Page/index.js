@@ -27,7 +27,6 @@ export default function Page({ setCurrentPage, currentPage }) {
 
   return (
     <section>
-      <h2>{capitalizeFirstLetter(currentPage.name)}</h2>
       <PageContent>{renderPage()}</PageContent>
     </section>
   );

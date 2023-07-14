@@ -10,16 +10,17 @@ export default function Home({ setCurrentPage }) {
       >
         <h1>Yafei Liu</h1>
         <h2>I'm a professional Web Designer</h2>
-        <a
+        <button
+          type="button"
           onClick={() => {
             setCurrentPage({
               name: "about",
             });
           }}
-          className="btn-about"
+          className="btn btn-outline-success"
         >
           About Me
-        </a>
+        </button>
       </div>
     </section>
   );
