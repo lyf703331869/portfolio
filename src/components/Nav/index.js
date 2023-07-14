@@ -9,14 +9,16 @@ export default function Nav(props) {
   }, [currentPage]);
 
   return (
-    <nav>
-      <ul className="flex-row">
+    <nav className="collapse navbar-collapse" id="navbarNav">
+      <ul className="navbar-nav">
         {pages.map((Page) => (
           <li
-            className={`mx-5 ${currentPage.name === Page.name && "navActive"}`}
+            className={`mx-5 nav-item ${
+              currentPage.name === Page.name && "navActive"
+            }`}
             key={Page.name}
           >
-            <span onClick={() => setCurrentPage(Page)}>
+            <span className="nav-link" onClick={() => setCurrentPage(Page)}>
               {capitalizeFirstLetter(Page.name)}
             </span>
           </li>
