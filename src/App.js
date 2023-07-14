@@ -7,6 +7,9 @@ import Footer from "./components/Footer";
 export default function App() {
   const [pages] = useState([
     {
+      name: "home",
+    },
+    {
       name: "about",
     },
     { name: "portfolio" },
@@ -28,7 +31,7 @@ export default function App() {
         ></Nav>
       </Header>
       <main>
-        <Page currentPage={currentPage}></Page>
+        <Page setCurrentPage={setCurrentPage} currentPage={currentPage}></Page>
       </main>
       <Footer />
     </div>

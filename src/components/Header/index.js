@@ -2,9 +2,9 @@ import React from "react";
 
 export default function Header({ children }) {
   return (
-    <header className="navbar sticky-top  navbar-expand-lg navbar-light justify-content-between bg-body-tertiary">
+    <header className="navbar sticky-top navbar-expand-lg navbar-light bg-body-secondary">
       <div className="container-fluid">
-        <h1 className="navbar-brand mb-0 h1">Yafei Liu</h1>
+        <h1 className="navbar-brand mb-0 h1">Yafei</h1>
         <button
           className="navbar-toggler"
           type="button"
