@@ -13,17 +13,35 @@ export default function Footer() {
   ];
 
   return (
-    <footer className="flex-row px-1">
-      {icons.map((icon) => (
-        <a
-          href={icon.link}
-          key={icon.name}
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <i className={icon.name}></i>
-        </a>
-      ))}
-    </footer>
+    <>
+      <footer id="footer">
+        {icons.map((icon) => (
+          <a
+            href={icon.link}
+            key={icon.name}
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            <i className={icon.name}></i>
+          </a>
+        ))}
+        <div class="container">
+          <div class="copyright">
+            &copy; Copyright{" "}
+            <strong>
+              <span>Yafei Liu</span>
+            </strong>
+            . All Rights Reserved
+          </div>
+        </div>
+      </footer>
+      <div id="preloader"></div>
+      <a
+        href="#"
+        class="back-to-top d-flex align-items-center justify-content-center"
+      >
+        <i class="bi bi-arrow-up-short"></i>
+      </a>
+    </>
   );
 }

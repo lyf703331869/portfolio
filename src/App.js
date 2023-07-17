@@ -19,6 +19,12 @@ export default function App() {
     },
   ]);
 
+  const styles = {
+    margin: {
+      marginTop: "3.36em",
+    },
+  };
+
   const [currentPage, setCurrentPage] = useState(pages[0]);
 
   return (
@@ -30,7 +36,7 @@ export default function App() {
           currentPage={currentPage}
         ></Nav>
       </Header>
-      <main>
+      <main style={styles.margin}>
         <Page setCurrentPage={setCurrentPage} currentPage={currentPage}></Page>
       </main>
       <Footer />

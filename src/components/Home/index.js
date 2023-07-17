@@ -1,5 +1,16 @@
 import React from "react";
 
+const styles = {
+  font: {
+    color: "white",
+    textShadow: "black 0.1em 0.1em 0.2em",
+  },
+  paragraph: {
+    color: "#505050",
+    margin: "0.5em 0 1em 0",
+  },
+};
+
 export default function Home({ setCurrentPage }) {
   return (
     <section id="hero" className="d-flex align-items-center">
@@ -8,8 +19,8 @@ export default function Home({ setCurrentPage }) {
         data-aos="zoom-in"
         data-aos-delay="100"
       >
-        <h1>Yafei Liu</h1>
-        <h2>I'm a professional Web Designer</h2>
+        <h1 style={styles.font}>Yafei Liu</h1>
+        <h2 style={styles.paragraph}>I'm a professional Web Designer</h2>
         <button
           type="button"
           onClick={() => {
@@ -17,7 +28,7 @@ export default function Home({ setCurrentPage }) {
               name: "about",
             });
           }}
-          className="btn btn-outline-success"
+          className="btn btn-success"
         >
           About Me
         </button>

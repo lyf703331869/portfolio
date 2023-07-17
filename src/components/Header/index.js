@@ -2,7 +2,7 @@ import React from "react";
 
 export default function Header({ children }) {
   return (
-    <header className="navbar sticky-top navbar-expand-lg navbar-light bg-body-secondary">
+    <header className="navbar fixed-top navbar-expand-lg navbar-light bg-body-secondary">
       <div className="container-fluid">
         <h1 className="navbar-brand mb-0 h1">Yafei</h1>
         <button
