@@ -16,9 +16,16 @@ export default function Nav(props) {
             className={`mx-5 nav-item ${
               currentPage.name === Page.name && "navActive"
             }`}
+            data-bs-toggle="collapse"
+            data-bs-target=".navbar-collapse.show"
             key={Page.name}
           >
-            <span className="nav-link" onClick={() => setCurrentPage(Page)}>
+            <span
+              className="nav-link"
+              onClick={() => {
+                setCurrentPage(Page);
+              }}
+            >
               {capitalizeFirstLetter(Page.name)}
             </span>
           </li>
