@@ -1,5 +1,6 @@
 import React from "react";
 import avatar from "../../assets/bg/avatar.jpg";
+import PureCounter from "@srexi/purecounterjs";
 import { Waypoint } from "react-waypoint";
 import { setProcess } from "../../utils/helpers";
 
@@ -33,7 +34,7 @@ export default function About() {
 
           <div className="row">
             <div className="col-lg-4">
-              <img src={avatar} className="img-fluid" alt="" />
+              <img src={avatar} className="img-fluid" alt="Avatar" />
             </div>
             <div className="col-lg-8 pt-4 pt-lg-0 content">
               <h3>Full stack web developer</h3>
@@ -208,6 +209,62 @@ export default function About() {
               </Waypoint>
             </div>
           </div>
+        </div>
+      </section>
+      <br></br>
+      <br></br>
+
+      {/* ------------------ Facts ------------------ */}
+      <section id="facts" className="facts">
+        <div
+          className="container"
+          data-aos="fade-up"
+          data-aos-offset="200"
+          data-aos-delay="50"
+          data-aos-duration="1200"
+          data-aos-once="true"
+        >
+          <div className="section-title">
+            <h2>Facts</h2>
+            <p>
+              Magnam dolores commodi suscipit. Necessitatibus eius consequatur
+              ex aliquid fuga eum quidem. Sit sint consectetur velit. Quisquam
+              quos quisquam cupiditate. Et nemo qui impedit suscipit alias ea.
+              Quia fugiat sit in iste officiis commodi quidem hic quas.
+            </p>
+          </div>
+          <Waypoint onEnter={() => new PureCounter()}>
+            <div className="row counters">
+              <div className="col-4 text-center">
+                <span
+                  data-purecounter-start="0"
+                  data-purecounter-end="205"
+                  data-purecounter-duration="1"
+                  className="purecounter"
+                ></span>
+                <p>Clients</p>
+              </div>
+              <div className="col-4 text-center">
+                <span
+                  data-purecounter-start="0"
+                  data-purecounter-end="36"
+                  data-purecounter-duration="1"
+                  className="purecounter"
+                ></span>
+                <p>Projects</p>
+              </div>
+
+              <div className="col-4 text-center">
+                <span
+                  data-purecounter-start="0"
+                  data-purecounter-end="1500"
+                  data-purecounter-duration="1"
+                  className="purecounter"
+                ></span>
+                <p>Hours Of Coding</p>
+              </div>
+            </div>
+          </Waypoint>
         </div>
       </section>
     </>
