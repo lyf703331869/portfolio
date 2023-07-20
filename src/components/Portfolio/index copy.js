@@ -1,40 +1,21 @@
-import React, { useState, useEffect } from "react";
+import React from "react";
 import Project from "../Project";
 import Isotope from "isotope-layout";
 
 export default function Portfolio() {
-  const [isotope, setIsotope] = useState(null);
-  const [filterKey, setFilterKey] = useState("*");
-  let portfolioFilters = document.querySelectorAll(
-    "#portfolio-flters li",
-    true
-  );
-
-  useEffect(() => {
-    setIsotope(
-      new Isotope(".portfolio-container", {
-        itemSelector: ".portfolio-item",
-        layoutMode: "fitRows",
-      })
-    );
-  }, []);
-
-  useEffect(() => {
-    if (isotope) {
-      filterKey === "*"
-        ? isotope.arrange({ filter: `${filterKey}` })
-        : isotope.arrange({ filter: `${filterKey}` });
-    }
-  }, [isotope, filterKey]);
-
-  const handleFilterKeyChange = (e) => {
+  function filterClass(e) {
     e.preventDefault();
-    portfolioFilters.forEach(function (el) {
-      el.classList.remove("filter-active");
+    let portfolioContainer = document.querySelector(".portfolio-container");
+    portfolioContainer.childNodes.forEach((el) => {
+      el.style.display = "block";
     });
-    e.target.classList.add("filter-active");
-    setFilterKey(e.target.getAttribute("data-filter"));
-  };
+    let portfolioIsotope = new Isotope(portfolioContainer, {
+      itemSelector: ".portfolio-item",
+    });
+    portfolioIsotope.arrange({
+      filter: e.target.getAttribute("data-filter"),
+    });
+  }
 
   const projects = [
     {
@@ -87,15 +68,15 @@ export default function Portfolio() {
             <ul id="portfolio-flters">
               <li
                 data-filter="*"
-                onClick={handleFilterKeyChange}
+                onClick={filterClass}
                 className="filter-active"
               >
                 All
               </li>
-              <li data-filter=".filter-app" onClick={handleFilterKeyChange}>
+              <li data-filter=".filter-app" onClick={filterClass}>
                 App
               </li>
-              <li data-filter=".filter-web" onClick={handleFilterKeyChange}>
+              <li data-filter=".filter-web" onClick={filterClass}>
                 Web
               </li>
             </ul>
@@ -105,10 +86,7 @@ export default function Portfolio() {
         <div
           className="row portfolio-container"
           data-aos="fade-up"
-          data-aos-offset="200"
-          data-aos-delay="50"
-          data-aos-duration="1200"
-          data-aos-once="true"
+          data-aos-delay="500"
         >
           {projects.map((project, idx) => (
             <Project project={project} key={"project" + idx} />
