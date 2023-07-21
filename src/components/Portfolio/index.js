@@ -3,32 +3,23 @@ import Project from "../Project";
 import Isotope from "isotope-layout";
 
 export default function Portfolio() {
-  const [isotope, setIsotope] = useState(null);
   const [filterKey, setFilterKey] = useState("*");
-  let portfolioFilters = document.querySelectorAll(
-    "#portfolio-flters li",
-    true
-  );
+  const [isotope, setIsotope] = useState(null);
+  let portfolioFilters = document.querySelectorAll("#portfolio-flters li");
 
   useEffect(() => {
-    setIsotope(
-      new Isotope(".portfolio-container", {
-        itemSelector: ".portfolio-item",
-        layoutMode: "fitRows",
-      })
-    );
+    setIsotope(new Isotope(".portfolio-container"));
+    console.log("1");
   }, []);
 
   useEffect(() => {
     if (isotope) {
-      filterKey === "*"
-        ? isotope.arrange({ filter: `${filterKey}` })
-        : isotope.arrange({ filter: `${filterKey}` });
+      isotope.arrange({ filter: `${filterKey}` });
+      console.log("2");
     }
-  }, [isotope, filterKey]);
+  }, [filterKey]);
 
   const handleFilterKeyChange = (e) => {
-    e.preventDefault();
     portfolioFilters.forEach(function (el) {
       el.classList.remove("filter-active");
     });
@@ -105,10 +96,7 @@ export default function Portfolio() {
         <div
           className="row portfolio-container"
           data-aos="fade-up"
-          data-aos-offset="200"
-          data-aos-delay="50"
-          data-aos-duration="1200"
-          data-aos-once="true"
+          data-aos-delay="200"
         >
           {projects.map((project, idx) => (
             <Project project={project} key={"project" + idx} />

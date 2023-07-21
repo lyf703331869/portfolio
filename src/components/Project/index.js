@@ -1,5 +1,4 @@
 import React from "react";
-import "../../../node_modules/glightbox/src/js/glightbox";
 
 export default function Project({ project }) {
   const { name, classification, link } = project;
