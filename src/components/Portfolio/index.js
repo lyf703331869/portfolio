@@ -1,31 +1,29 @@
 import React, { useState, useEffect } from "react";
 import Project from "../Project";
-import Isotope from "isotope-layout";
+// import Isotope from "isotope-layout";
 
 export default function Portfolio() {
-  const [filterKey, setFilterKey] = useState("*");
-  const [isotope, setIsotope] = useState(null);
-  let portfolioFilters = document.querySelectorAll("#portfolio-flters li");
+  // const [filterKey, setFilterKey] = useState("");
+  // const [isotope, setIsotope] = useState(null);
+  // let portfolioFilters = document.querySelectorAll("#portfolio-flters li");
 
-  useEffect(() => {
-    setIsotope(new Isotope(".portfolio-container"));
-    console.log("1");
-  }, []);
+  // useEffect(() => {
+  //   setIsotope(new Isotope(".portfolio-container"));
+  // }, []);
 
-  useEffect(() => {
-    if (isotope) {
-      isotope.arrange({ filter: `${filterKey}` });
-      console.log("2");
-    }
-  }, [filterKey]);
+  // useEffect(() => {
+  //   if (isotope) {
+  //     isotope.arrange({ filter: `${filterKey}` });
+  //   }
+  // }, [filterKey]);
 
-  const handleFilterKeyChange = (e) => {
-    portfolioFilters.forEach(function (el) {
-      el.classList.remove("filter-active");
-    });
-    e.target.classList.add("filter-active");
-    setFilterKey(e.target.getAttribute("data-filter"));
-  };
+  // const handleFilterKeyChange = (e) => {
+  //   portfolioFilters.forEach(function (el) {
+  //     el.classList.remove("filter-active");
+  //   });
+  //   e.target.classList.add("filter-active");
+  //   setFilterKey(e.target.getAttribute("data-filter"));
+  // };
 
   const projects = [
     {
@@ -73,14 +71,10 @@ export default function Portfolio() {
           </p>
         </div>
 
-        <div className="row" data-aos="fade-up" data-aos-delay="100">
+        {/* <div className="row" data-aos="fade-up" data-aos-delay="100">
           <div className="col-lg-12 d-flex justify-content-center">
             <ul id="portfolio-flters">
-              <li
-                data-filter="*"
-                onClick={handleFilterKeyChange}
-                className="filter-active"
-              >
+              <li data-filter="*" onClick={handleFilterKeyChange}>
                 All
               </li>
               <li data-filter=".filter-app" onClick={handleFilterKeyChange}>
@@ -91,7 +85,7 @@ export default function Portfolio() {
               </li>
             </ul>
           </div>
-        </div>
+        </div> */}
 
         <div
           className="row portfolio-container"
