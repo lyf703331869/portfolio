@@ -5,21 +5,19 @@ import Isotope from "isotope-layout";
 export default function Portfolio() {
   const [filterKey, setFilterKey] = useState("*");
   const [isotope, setIsotope] = useState(null);
-  let portfolioFilters = document.querySelectorAll("#portfolio-flters li");
 
   useEffect(() => {
     setIsotope(new Isotope(".portfolio-container"));
-    console.log("1");
   }, []);
 
   useEffect(() => {
     if (isotope) {
       isotope.arrange({ filter: `${filterKey}` });
-      console.log("2");
     }
   }, [filterKey]);
 
   const handleFilterKeyChange = (e) => {
+    let portfolioFilters = document.querySelectorAll("#portfolio-flters li");
     portfolioFilters.forEach(function (el) {
       el.classList.remove("filter-active");
     });
@@ -65,30 +63,17 @@ export default function Portfolio() {
       >
         <div className="section-title">
           <h2>Portfolio</h2>
-          <p>
-            Magnam dolores commodi suscipit. Necessitatibus eius consequatur ex
-            aliquid fuga eum quidem. Sit sint consectetur velit. Quisquam quos
-            quisquam cupiditate. Et nemo qui impedit suscipit alias ea. Quia
-            fugiat sit in iste officiis commodi quidem hic quas.
-          </p>
+          <p>Below please feel free to see some of my recent projects.</p>
         </div>
 
         <div className="row" data-aos="fade-up" data-aos-delay="100">
           <div className="col-lg-12 d-flex justify-content-center">
-            <ul id="portfolio-flters">
-              <li
-                data-filter="*"
-                onClick={handleFilterKeyChange}
-                className="filter-active"
-              >
+            <ul id="portfolio-flters" onClick={handleFilterKeyChange}>
+              <li data-filter="*" className="filter-active">
                 All
               </li>
-              <li data-filter=".filter-app" onClick={handleFilterKeyChange}>
-                App
-              </li>
-              <li data-filter=".filter-web" onClick={handleFilterKeyChange}>
-                Web
-              </li>
+              <li data-filter=".filter-app">App</li>
+              <li data-filter=".filter-web">Web</li>
             </ul>
           </div>
         </div>
