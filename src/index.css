@@ -32,7 +32,7 @@
   height: 2px;
   bottom: 0px;
   left: 5px;
-  background-color: #34b7a7;
+  background-color: #316cf4;
   visibility: hidden;
   width: 0px;
   transition: all 0.3s ease-in-out 0s;
@@ -135,7 +135,7 @@
   display: block;
   width: 50px;
   height: 3px;
-  background: #34b7a7;
+  background: #316cf4;
   bottom: 0;
   left: calc(50% - 25px);
 }
@@ -168,11 +168,17 @@
 .about .content ul i {
   font-size: 20px;
   padding-right: 2px;
-  color: #34b7a7;
+  color: #316cf4;
 }
 
 .about .content p:last-child {
   margin-bottom: 0;
+}
+
+.about p {
+  font-style: italic;
+  width: 90%;
+  margin-top: 30px;
 }
 
 /* Skills */
@@ -207,7 +213,7 @@
   width: 1px;
   height: 10px;
   transition: 1.9s;
-  background-color: #34b7a7;
+  background-color: #316cf4;
 }
 
 /* Facts */
@@ -215,7 +221,7 @@
 .facts .counters span {
   font-size: 48px;
   display: block;
-  color: #34b7a7;
+  color: #316cf4;
 }
 
 .facts .counters p {
@@ -260,7 +266,7 @@
 .portfolio #portfolio-flters li:hover,
 .portfolio #portfolio-flters li.filter-active {
   color: #fff;
-  background: #34b7a7;
+  background: #316cf4;
 }
 
 .portfolio #portfolio-flters li:last-child {
@@ -352,6 +358,66 @@
   opacity: 1;
 }
 
+/* Resume */
+
+.resume .resume-title {
+  font-size: 26px;
+  font-weight: 400;
+  margin-top: 20px;
+  margin-bottom: 20px;
+  color: #222222;
+}
+
+.resume .resume-item {
+  padding: 0 0 20px 20px;
+  margin-top: -2px;
+  border-left: 2px solid #316cf4;
+  position: relative;
+}
+
+.resume .resume-item h4 {
+  line-height: 18px;
+  font-size: 18px;
+  font-weight: 600;
+  font-family: "Poppins", sans-serif;
+  color: #316cf4;
+  margin-bottom: 10px;
+}
+
+.resume .resume-item h5 {
+  font-size: 16px;
+  background: #effbf9;
+  padding: 5px 15px;
+  display: inline-block;
+  font-weight: 600;
+  margin-bottom: 10px;
+  color: #316cf4;
+}
+
+.resume .resume-item ul {
+  padding-left: 20px;
+}
+
+.resume .resume-item ul li {
+  padding-bottom: 10px;
+}
+
+.resume .resume-item:last-child {
+  padding-bottom: 0;
+}
+
+.resume .resume-item::before {
+  content: "";
+  position: absolute;
+  width: 16px;
+  height: 16px;
+  border-radius: 50px;
+  left: -9px;
+  top: 0;
+  background: #fff;
+  border: 2px solid #316cf4;
+}
+
 /* Contact */
 
 .contact .info {
@@ -361,7 +427,7 @@
 
 .contact .info i {
   font-size: 20px;
-  color: #34b7a7;
+  color: #316cf4;
   float: left;
   width: 44px;
   height: 44px;
@@ -396,7 +462,7 @@
 .contact .info .email:hover i,
 .contact .info .address:hover i,
 .contact .info .phone:hover i {
-  background: #34b7a7;
+  background: #316cf4;
   color: #fff;
 }
 
@@ -455,7 +521,7 @@
 
 .contact .php-email-form input:focus,
 .contact .php-email-form textarea:focus {
-  border-color: #34b7a7;
+  border-color: #316cf4;
 }
 
 .contact .php-email-form input {
@@ -467,7 +533,7 @@
 }
 
 .contact .php-email-form button[type="submit"] {
-  background: #34b7a7;
+  background: #316cf4;
   border: 0;
   padding: 10px 30px 12px 30px;
   color: #fff;
@@ -499,6 +565,12 @@
   text-align: center;
 }
 
+#footer .icon {
+  color: black;
+  margin: 0 10px;
+  text-decoration: none;
+}
+
 .back-to-top {
   position: fixed;
   visibility: hidden;
@@ -506,7 +578,7 @@
   right: 15px;
   bottom: 15px;
   z-index: 11111;
-  background: #34b7a7;
+  background: #316cf4;
   width: 40px;
   height: 40px;
   border-radius: 50px;
@@ -520,7 +592,7 @@
 }
 
 .back-to-top:hover {
-  background: #49cbbb;
+  background: #316cf4;
   color: #fff;
 }
 

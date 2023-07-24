@@ -16,6 +16,7 @@ export default function Header({ children }) {
         >
           <span className="navbar-toggler-icon"></span>
         </button>
+
         {children}
       </div>
     </header>

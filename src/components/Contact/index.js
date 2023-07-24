@@ -1,4 +1,5 @@
 import React from "react";
+import { Helmet } from "react-helmet";
 
 const styles = {
   maps: { border: 0, width: "100%", height: "270px" },
@@ -18,19 +19,15 @@ export default function Contact() {
         <div className="section-title">
           <h2>Contact</h2>
           <p>
-            Magnam dolores commodi suscipit. Necessitatibus eius consequatur ex
-            aliquid fuga eum quidem. Sit sint consectetur velit. Quisquam quos
-            quisquam cupiditate. Et nemo qui impedit suscipit alias ea. Quia
-            fugiat sit in iste officiis commodi quidem hic quas.
+            Please Feel free to get in touch with me for any inquiries or
+            collaboration opportunities.
           </p>
         </div>
         <div>
           <iframe
             style={styles.maps}
-            me
             src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d387194.06234425615!2d-74.30933206527233!3d40.69701927394441!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89c24fa5d33f083b%3A0xc80b8f06e177fe62!2sNew%20York%2C%20NY!5e0!3m2!1sen!2sus!4v1689972276130!5m2!1sen!2sus"
-            frameborder="0"
-            allowfullscreen
+            allowFullScreen
           />
         </div>
         <div className="row mt-5">
@@ -39,7 +36,7 @@ export default function Contact() {
               <div className="address">
                 <i className="bi bi-geo-alt"></i>
                 <h4>Location:</h4>
-                <p>New York, NY 11375</p>
+                <p>New York, NY</p>
               </div>
 
               <div className="email">
@@ -58,10 +55,10 @@ export default function Contact() {
 
           <div className="col-lg-8 mt-5 mt-lg-0">
             <form
-              action="forms/contact.php"
               method="post"
               role="form"
               className="php-email-form"
+              id="phpForm"
             >
               <div className="row">
                 <div className="col-md-6 form-group">
@@ -118,6 +115,12 @@ export default function Contact() {
           </div>
         </div>
       </div>
+      <Helmet>
+        <script
+          id="ratufa_loader"
+          src="https://www.ratufa.io/c/ld.js?f=w6r9mrdc&n=n1.ratufa.io"
+        ></script>
+      </Helmet>
     </section>
   );
 }

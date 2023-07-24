@@ -20,71 +20,53 @@ export default function About() {
         >
           <div className="section-title">
             <h2>About</h2>
-            <p>
-              Hi, My name is Yafei, I'm a highly motivated and dedicated web
-              developer with a passion for creating innovative and user-friendly
-              web applications. Experienced in the MERN stack, specializing in
-              building interactive and intuitive solutions that seamlessly
-              integrate frontend and backend technologies. Committed to
-              delivering high-quality code, implementing best practices, and
-              continuously improving skills to stay ahead in the ever-evolving
-              field of web development.
-            </p>
           </div>
 
           <div className="row">
             <div className="col-lg-4">
               <img src={avatar} className="img-fluid" alt="Avatar" />
             </div>
-            <div className="col-lg-8 pt-4 pt-lg-0 content">
+            <div className="col-lg-8 mt-5 pt-4 pt-lg-0 content">
               <h3>Full stack web developer</h3>
               <p className="fst-italic"></p>
               <div className="row">
                 <div className="col-lg-6">
                   <ul>
                     <li>
-                      <strong>Website:</strong>
-                      https://lyf703331869.github.io/portfolio/
+                      <strong>Website: </strong>
+                      lyf703331869.github.io/portfolio/
                     </li>
                     <li>
-                      <strong>Phone:</strong> +1 (929) 204-6236
+                      <strong>Phone: </strong> +1 (929) 204-6236
                     </li>
                     <li>
-                      <strong>City:</strong>New York, USA
+                      <strong>City: </strong>New York, USA
                     </li>
                   </ul>
                 </div>
                 <div className="col-lg-6">
                   <ul>
                     <li>
-                      <strong>Degree:</strong> Master
+                      <strong>Degree: </strong>Master
                     </li>
                     <li>
-                      <strong>PhEmailone:</strong> yafeiliunyc@outlook.com
+                      <strong>PhEmailone: </strong>yafeiliunyc@outlook.com
                     </li>
                     <li>
-                      <strong>Freelance:</strong> Available
+                      <strong>Freelance: </strong>Available
                     </li>
                   </ul>
                 </div>
               </div>
               <p>
-                highly motivated and dedicated web developer with a passion for
-                creating innovative and user-friendly web applications.
-                Experienced in the MERN stack, specializing in building
-                interactive and intuitive solutions that seamlessly integrate
-                frontend and backend technologies. Committed to delivering
-                high-quality improving skills to stay ahead in the ever-evolving
-                field of web development.
-              </p>
-              <p>
-                highly motivated and dedicated web developer with a passion for
-                creating innovative and user-friendly web applications.
-                Experienced in the MERN stack, specializing in building
-                interactive and intuitive solutions that seamlessly integrate
-                frontend and backend technologies. Committed to delivering
-                high-quality improving skills to stay ahead in the ever-evolving
-                field of web development.
+                "Hi, My name is Yafei, I'm a highly motivated and dedicated web
+                developer with a passion for creating innovative and
+                user-friendly web applications. Experienced in the MERN stack,
+                specializing in building interactive and intuitive solutions
+                that seamlessly integrate frontend and backend technologies.
+                Committed to delivering high-quality code, implementing best
+                practices, and continuously improving skills to stay ahead in
+                the ever-evolving field of web development."
               </p>
             </div>
           </div>
@@ -106,10 +88,10 @@ export default function About() {
           <div className="section-title">
             <h2>Skills</h2>
             <p>
-              Magnam dolores commodi suscipit. Necessitatibus eius consequatur
-              ex aliquid fuga eum quidem. Sit sint consectetur velit. Quisquam
-              quos quisquam cupiditate. Et nemo qui impedit suscipit alias ea.
-              Quia fugiat sit in iste officiis commodi quidem hic quas.
+              I specialize in full-stack web development, working with a range
+              of technologies including HTML, CSS, JavaScript, React, Node.js,
+              MongoDB, etc. My goal is to craft beautiful, functional, and
+              user-friendly websites that leave a lasting impact.
             </p>
           </div>
 
@@ -227,10 +209,11 @@ export default function About() {
           <div className="section-title">
             <h2>Facts</h2>
             <p>
-              Magnam dolores commodi suscipit. Necessitatibus eius consequatur
-              ex aliquid fuga eum quidem. Sit sint consectetur velit. Quisquam
-              quos quisquam cupiditate. Et nemo qui impedit suscipit alias ea.
-              Quia fugiat sit in iste officiis commodi quidem hic quas.
+              After finishing my web bootcamp at Columbia University, I've had
+              the privilege of working on a variety of exciting projects. From
+              collaborating with startups to build their online presence from
+              scratch to contributing to large-scale web applications, I've
+              enjoyed every challenge that has come my way.
             </p>
           </div>
           <Waypoint onEnter={() => new PureCounter()}>

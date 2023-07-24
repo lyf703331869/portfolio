@@ -3,26 +3,30 @@ import React from "react";
 export default function Footer() {
   const icons = [
     {
-      name: "fab fa-github",
+      name: "Github: ",
+      icon: "fab fa-github",
       link: "https://github.com/lyf703331869",
     },
     {
-      name: "fab fa-linkedin",
+      name: "LinkedIn: ",
+      icon: "fab fa-linkedin",
       link: "https://www.linkedin.com/in/yafeiliu",
     },
   ];
-
   return (
     <>
       <footer id="footer">
         {icons.map((icon) => (
           <a
+            className="icon"
             href={icon.link}
-            key={icon.name}
+            key={icon.icon}
+            position="absolute t"
             target="_blank"
             rel="noopener noreferrer"
           >
-            <i className={icon.name}></i>
+            {icon.name}
+            <i className={icon.icon}></i>
           </a>
         ))}
         <div className="container">
