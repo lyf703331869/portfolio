@@ -1,21 +1,22 @@
 {
   "files": {
     "main.css": "/portfolio/static/css/main.6292bd82.css",
-    "main.js": "/portfolio/static/js/main.14e9f9aa.js",
+    "main.js": "/portfolio/static/js/main.1c8be15a.js",
     "static/js/787.1ed0c42c.chunk.js": "/portfolio/static/js/787.1ed0c42c.chunk.js",
     "static/media/homepage-bg.jpg": "/portfolio/static/media/homepage-bg.90b5dda4902193e2122d.jpg",
     "static/media/avatar.jpg": "/portfolio/static/media/avatar.17d9a3a20d8ecbce8879.jpg",
     "static/media/Cine Review.jpg": "/portfolio/static/media/Cine Review.63cd144f1af88c017f4e.jpg",
     "static/media/Folio Fund.jpg": "/portfolio/static/media/Folio Fund.844100baec2a02a0b02b.jpg",
+    "static/media/Thoughtiverse.jpg": "/portfolio/static/media/Thoughtiverse.5172ab19180b3901df09.jpg",
     "static/media/Npm Package.jpg": "/portfolio/static/media/Npm Package.bebbf374890c28dd7d1b.jpg",
     "static/media/Kindler.jpg": "/portfolio/static/media/Kindler.e77219f8f8a9da91ea2d.jpg",
     "index.html": "/portfolio/index.html",
     "main.6292bd82.css.map": "/portfolio/static/css/main.6292bd82.css.map",
-    "main.14e9f9aa.js.map": "/portfolio/static/js/main.14e9f9aa.js.map",
+    "main.1c8be15a.js.map": "/portfolio/static/js/main.1c8be15a.js.map",
     "787.1ed0c42c.chunk.js.map": "/portfolio/static/js/787.1ed0c42c.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.6292bd82.css",
-    "static/js/main.14e9f9aa.js"
+    "static/js/main.1c8be15a.js"
   ]
 }
