@@ -50,6 +50,12 @@ export default function Portfolio() {
       link: "https://www.npmjs.com/package/quick-readme-generator",
       repo: "https://github.com/lyf703331869/quick-readme-generator",
     },
+    {
+      name: "Thoughtiverse",
+      classification: "app",
+      link: "http://3.145.160.29/",
+      repo: "https://github.com/lyf703331869/public-thoughts",
+    },
   ];
   return (
     <section id="portfolio" className="portfolio">
