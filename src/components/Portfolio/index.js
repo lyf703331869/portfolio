@@ -56,6 +56,12 @@ export default function Portfolio() {
       link: "http://3.145.160.29/",
       repo: "https://github.com/lyf703331869/public-thoughts",
     },
+    {
+      name: "Just Tech News",
+      classification: "app",
+      link: "https://just-tech-news-blog-522e1270241c.herokuapp.com/",
+      repo: "https://github.com/lyf703331869/python-newsfeed",
+    },
   ];
   return (
     <section id="portfolio" className="portfolio">
