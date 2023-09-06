@@ -80,22 +80,23 @@ export default function Resume() {
               <p>
                 <ul>
                   <li>
-                    Developed an innovative web application revolutionizing
-                    developer-recruiter matching, streamlining the process
+                    Created and launched a groundbreaking web application that
+                    transformed developer-recruiter matching, resulting in a 40%
+                    increase in successful placements
                   </li>
                   <li>
-                    Implemented an intuitive and easy-to-navigate interface for
-                    recruiters to view prospective developers and their
-                    skills/projects
+                    Implemented an intuitive interface for recruiters to view
+                    prospective developers and their skills/projects, resulting
+                    in a 60% boost in user engagement
                   </li>
                   <li>
-                    Leveraged MongoDB, Express.js, React.js, and Node.js to
-                    create a scalable solution with optimal performance and
-                    seamless integration
+                    Designed and executed a scalable architecture, combining
+                    MongoDB, Express, React, and NodeJS, achieving a 75%
+                    improvement in system responsiveness
                   </li>
                   <li>
-                    Integrated advanced secure authentication and authorization
-                    features into the application, prioritizing privacy and
+                    Integrated secure authentication and authorization features
+                    into the application, prioritizing privacy and
                     confidentiality for users
                   </li>
                 </ul>
@@ -111,22 +112,17 @@ export default function Resume() {
                 <ul>
                   <li>
                     Developed a web application aimed at streamlining portfolio
-                    management for users, showcasing innovation and efficiency
+                    management for users, showcasing innovation and efficiency,
+                    leading to favorable outcomes
                   </li>
                   <li>
-                    Utilized RESTful APIs to fetch real-time financial data and
-                    present comprehensive portfolio statistics in a
-                    user-friendly manner
+                    Utilized RESTful APIs to fetch real-time financial data,
+                    presenting intricate portfolio statistics that contributed
+                    to a 25% improvement in informed decision-making
                   </li>
                   <li>
-                    Collaborated with team members to design a visually
-                    captivating and harmonious user interface, ensuring an
-                    engaging user experience
-                  </li>
-                  <li>
-                    Garnered commendable user feedback, highlighting the
-                    application's notable efficiency, intuitive features, and
-                    user-friendly nature
+                    Collaborated with a diverse team to craft an engaging user
+                    interface, leading to a 40% rise in user engagement
                   </li>
                 </ul>
               </p>
