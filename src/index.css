@@ -362,6 +362,11 @@
 
 /* Resume */
 
+.download {
+  display: flex;
+  justify-content: center;
+}
+
 .resume .resume-title {
   font-size: 26px;
   font-weight: 400;

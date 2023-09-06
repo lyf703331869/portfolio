@@ -1,4 +1,5 @@
 import React from "react";
+import resume from "../../assets/resume/YafeiLiu's Resume.pdf";
 
 export default function Resume() {
   return (
@@ -13,6 +14,12 @@ export default function Resume() {
       >
         <div class="section-title">
           <h2>Resume</h2>
+        </div>
+
+        <div className="download">
+          <a href={resume} download={"Yafei Liu's Resume"} target="_blank">
+            <button className="btn btn-primary">Download</button>
+          </a>
         </div>
 
         <div class="row">
